@@ -46,7 +46,11 @@
     border-color: ;
     background-color: #1ab2ff;}
 
-	div.transbox { background-color: #ffffff; opacity: 0.6; filter: alpha(opacity=60); }
+	div.transbox { 
+		background-color: #ffffff; 
+		opacity: 0.6; 
+		filter: alpha(opacity=60); 
+	}
 
   .dropdown {
     position: relative;
@@ -67,6 +71,18 @@
     display:block;
   }
 
+  .btn {
+  	background-color: gray;
+  	font-size: 20px;
+  	color: #ffffff;
+  	outline: none;
+}
+	.btn-conf:hover {
+		background: #33a6cc;
+		color:#ffffff
+	}
+
+
 
 </style>
   </head>
@@ -78,22 +94,22 @@
   <div class="dropdown" style="font-size:35px; color:black">
       	<span><strong>Research</span>
       	<div class="dropdown-content">
-      		<p><a href="research.html" style="color:#00ccff">Projects</p></a>
+      		<p><a href="research.html">Projects</p></a>
       		<p><a href="publications.html">Publications</p></a>
       		<p><a href="https://github.com/BenjiDa" target="_blank">Codes</p></a>
       		<p><a href="./assets/pdf/CV.pdf" target="_blank">CV</p></a>
+      		<p><a href="https://www.usgs.gov/news/news-releases" target="_blank">USGS News</p></a>
       	</div>
   </div>
 
     <div class="dropdown" style="font-size:35px; color:black">
       	<span><strong>More</span>
       	<div class="dropdown-content">
-      		<p><a href="morefun.html" style="color:#00ccff">Fun Stuff</p></a>
+      		<p><a href="morefun.html">Fun Stuff</p></a>
       		<p><a href="https://benmelosh.bandcamp.com/" target="_blank">Music</p></a>
       	</div>
     </div>
 
-    
       <div class="container centered" style="padding:100px 0px">
         <div class="row">
           <div class="col-md-8 col-md-offset-2" style="color:black; font-size:40px">
@@ -116,13 +132,13 @@
 
        
     
-       
-       <div class="container centered" > 
        <div class="transbox">
+       <div class="container centered" > 
+       
         <div class="row mt">
 
           <div class="col-sm-3">
-           	<i class="ion-ios7-world-outline" style="color:black"></i> 
+           	<i class="ion-ios7-world-outline" style="color:black;"></i> 
             <h3 ><a class="wsite-menu-item" href="research.html#EarthquakeGeology" style="color:black;font-size:20px"><strong>Earthquake Geology</a></h3>
           </div><!--/col-md-4-->
 
@@ -160,7 +176,7 @@
        
    
 
-    <div class="container ptb">
+    <div class="container ptb" style="margin-top:-80px; margin-bottom:-80px">
       <div class="row">
         <h2 class="centered mb">I compliment a strong background in structural field mapping with an extensive, computer-based, data analysis and management skill set.</h2>
         <div class="col-md-12">
@@ -181,8 +197,7 @@
           <div class="col-sm-4">
                   <li>Fault and shear zone mechanics</li>
           </div><!--/col-md-4-->
-          <br>
-          <br>
+         
 <!--              <li>Field mapping</li>
           </div><!--/col-md-4-->
 
@@ -195,9 +210,8 @@
           </div><!--/col-md-4-->
         
        <!--</ul>-->
-          
         </div><!--/col-md-6-->
-        <div class="col-md-7">
+        <div class="col-md-7" style="margin-top: -40px; margin-bottom: -120px">
           <p></p>
         </div><!--/col-md-6-->
       </div><!--/row-->
@@ -232,15 +246,25 @@
  -->      <!--/container--> 
 
    <!-- <div style="background-color:lightgray;" id="sep">-->
-   	<div class="transbox" style="opacity:0.9">
+   	<div class="transbox" style="opacity:0.9"> 
       <div  class="container">
+
+
+
         <div class="row centered">
+
           <div class="col-md-10 col-md-offset-1">
-            <h1><a style="font-size:25px; color:black;" href="https://www.usgs.gov/" target="_blank"> I am currently a research geologist at the USGS in Menlo Park, California</a></h1>
-            <button class="btn btn-conf btn-clear"><a href="mailto:bmelosh@usgs.gov?Subject=Potential%20Collaboration" target="_top" style="font-size:20px;color:black">Let's Collaborate</a></button>
+            <h1><a style="font-size:25px; color:black;" href="https://www.usgs.gov/" target="_blank"> I am currently a research geologist at the USGS in Menlo Park, California</a></h1> 
+            <button class="btn btn-conf btn-clear"><a href="mailto:bmelosh@usgs.gov?Subject=Potential%20Collaboration" target="_top" >Let's Collaborate</a></button>
           </div>
         </div><!--/row-->
+
+
+
+
+        <img style="height:100px;margin-top:30px;margin-bottom:-110px" src="assets/img/USGS_logo_green.svg" alt="Generic placeholder image">
       </div><!--/container-->
+
     </div><!--/.sep-->
 
     <div id="f">
@@ -257,8 +281,10 @@
             <a href="https://scholar.google.com/citations?user=k6HaZgoAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar-square ai-3x"></i>
 </a>
           </div><!--/col-md-8-->
-                  <a href="#">Contact me at benmelosh@gmail.com</i></a>
+                  <a href="#">Contact me at: benmelosh@gmail.com</i></a>
                   <a href="#">bmelosh@usgs.gov</i></a>
+
+
 
         </div>
       </div><!--/container-->
