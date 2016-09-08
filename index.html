@@ -37,9 +37,8 @@
     border-radius:10%;
     margin:10px;
     vertical-align: middle;}
-	li {float: left;}
-	li a:hover {color: blue;}
-	li {list-style-type: none;}
+
+	
 
 	#colorstrip{
     width: 100%; height: 50px;
@@ -47,21 +46,54 @@
     border-color: ;
     background-color: #1ab2ff;}
 
-
-
 	div.transbox { background-color: #ffffff; opacity: 0.6; filter: alpha(opacity=60); }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0px 30px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.4);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display:block;
+  }
 
 
 </style>
   </head>
 
-
-
   <body>
 
+<div id="h">
 
+  <div class="dropdown" style="font-size:35px; color:black">
+      	<span><strong>Research</span>
+      	<div class="dropdown-content">
+      		<p><a href="research.html" style="color:#00ccff">Projects</p></a>
+      		<p><a href="publications.html">Publications</p></a>
+      		<p><a href="https://github.com/BenjiDa" target="_blank">Codes</p></a>
+      		<p><a href="./assets/pdf/CV.pdf" target="_blank">CV</p></a>
+      	</div>
+  </div>
 
-    <div id="h">
+    <div class="dropdown" style="font-size:35px; color:black">
+      	<span><strong>More</span>
+      	<div class="dropdown-content">
+      		<p><a href="morefun.html" style="color:#00ccff">Fun Stuff</p></a>
+      		<p><a href="https://benmelosh.bandcamp.com/" target="_blank">Music</p></a>
+      	</div>
+    </div>
+
+    
       <div class="container centered" style="padding:100px 0px">
         <div class="row">
           <div class="col-md-8 col-md-offset-2" style="color:black; font-size:40px">
@@ -80,6 +112,9 @@
       <br>
       <br>
       <br>
+
+
+       
     
        
        <div class="container centered" > 
@@ -88,24 +123,24 @@
 
           <div class="col-sm-3">
            	<i class="ion-ios7-world-outline" style="color:black"></i> 
-            <h3 ><a href="research.html"  style="color:black;font-size:40px"><strong>Research</a></h3>
+            <h3 ><a class="wsite-menu-item" href="research.html#EarthquakeGeology" style="color:black;font-size:20px"><strong>Earthquake Geology</a></h3>
           </div><!--/col-md-4-->
 
           <div class="col-sm-3" >
             <i class="ion-ios7-world-outline" style="color:black;"></i>
-            <h3><a href="./assets/pdf/CV.pdf" target="_blank"  style="color:black;font-size:40px"><strong>CV</a></h3>
+            <h3><a href="research.html" style="color:black;font-size:20px"><strong>Active Tectonics</a></h3>
           </div><!--/col-md-4-->
 
 
           <div class="col-sm-3">
             <i class="ion-ios7-world-outline" style="color:black;"></i>
-            <h3><a href="publications.html"  style="color:black;font-size:40px"><strong>Publications</a></strong></h3>
+            <h3><a href="research.html"  style="color:black;font-size:20px"><strong>Mapping</a></strong></h3>
           </div><!--/col-md-4-->
 
 
           <div class="col-sm-3">
             <i class="ion-ios7-world-outline" style="color:black;"></i>
-            <h3><a href="morefun.html" style="color:black;font-size:40px"><strong>More Fun</a></h3>
+            <h3><a href="research.html#Geothermal" style="color:black;font-size:20px"><strong>Geothermal</a></h3>
           </div><!--/col-md-4-->
         
         </div><!--/row  mt-->
@@ -123,43 +158,44 @@
 	
     <!--H-->  
        
-    
+   
 
     <div class="container ptb">
       <div class="row">
         <h2 class="centered mb">I compliment a strong background in structural field mapping with an extensive, computer-based, data analysis and management skill set.</h2>
         <div class="col-md-12">
+        <!--
           <h3><strong>Areas of Expertise</strong></h3>
           <br>
-            <ul style="font-size:1.3em;" class="col-md-10 col-md-offset-1">
-
+         <!-- 
+         <ul style="font-size:1.3em;" class="col-md-10 col-md-offset-1">
           <div class="col-sm-4">
+
               <li>Earthquake geology</li>
           </div><!--/col-md-4-->
-
+<!--
           <div class="col-sm-4">
               <li>Active tectonics</li>
           </div><!--/col-md-4-->
-
+<!--
           <div class="col-sm-4">
                   <li>Fault and shear zone mechanics</li>
           </div><!--/col-md-4-->
           <br>
           <br>
-        	<div class="col-sm-4">
-              <li>Field mapping</li>
+<!--              <li>Field mapping</li>
           </div><!--/col-md-4-->
 
-          <div class="col-sm-4">
-              <li>Structural control of geothermal systems</li>
+<!--              <li>Structural control of geothermal systems</li>
           </div><!--/col-md-4-->
 
-          <div class="col-sm-4">
+ <!--         <div class="col-sm-4">
               <li>SEM, EBSD, petrography</li>
 
           </div><!--/col-md-4-->
         
-          </ul>
+       <!--</ul>-->
+          
         </div><!--/col-md-6-->
         <div class="col-md-7">
           <p></p>
