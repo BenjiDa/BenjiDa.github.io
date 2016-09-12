@@ -311,7 +311,7 @@ div.item{
 	padding-top: 100px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 450px;
+	min-height: 250px;
 	width: 100%;
 	color: white;
 	
@@ -384,4 +384,14 @@ div.item{
 #h2 h3 {
 	margin-top: 30px;
 	letter-spacing: 1px;
+}
+
+
+.mypublist a {
+	display:block;
+	color:#000000;
+} 
+.mypublist a:hover {
+  text-decoration: none;
+  color:#008B8B;
 }
