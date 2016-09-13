@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="assets/img/favicon.ico">
 
-    <title>Research</title>
+    <title>Flow Stress Calculator</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -53,156 +53,51 @@
 </style>
   </head>
 
-  <audio controls autoplay>
+  <audio controls autoplay loop>
+  
   <source src="assets/ryanjam.mp3" type="audio/ogg">
   </audio>
+  <p style="font-size: 14px"><i>Soothing Ryan Libbey jams as you calculate flow stress (courtesy of PortPound Studios) </i></p>
+  
+  
+ 
+  
+  
+  
 
   <body>
 
 
-      <div class="row">
+
+<div class="container">
+ 
+  <p style="font-size: 26px"><b>Flow Stress Calculator </b></p>
+  
+
+    
+    <form onsubmit="return false" oninput = "flowstress.value = Math.round(Math.exp((Math.log(grainsize.value) - Math.log(2451)) / -1.26) * 100) / 100;">
+
+     Grain Size (in &mu;m): <input name="grainsize" id="grainsize" type="number">
+    <br>
+    
+  	Flow Stress (MPa): <output name="flowstress" id="flowstress" ></output> Flow stress calculated with the Stipp et al. (2003) paleopiezometer and the Holyoke et al. (2010) correction.
+  	<br>
+    </form>
+   
+    
+ </div>
+ 
+   
+   <br>
+   <br>
+   
+   <div class="row">
         <div class="col-md-12">
-          <img style="width:100%;" src="assets/img/rock.png" class="img-responsive" alt="">
-          <p style="margin-left:10px;margin-top:-160px;font-size:70px;color:white;">Research</p>
-          <figcaption style="margin-top:140px"><i>Figure Above: Cathodeluminecense image of mylonitized pseudotachylyte.</i></figcaption>
+          <img style="width:100%;" src="assets/img/ebsd.png" class="img-responsive" alt="">
+          <figcaption style="margin-top:10px"><i>Figure Above: Electron backscatter detection map from a Pofadder Shear Zone mylonite. Pink color are quartz c-axes pointing at you!.</i></figcaption>
         </div>
       </div><!--/row-->
-<!--     </div>
- -->
 
- 
- 
- 
- 
-    <div id="g">
-      <div  class="container centered">
-        <!--<div class="row centered">-->
-          <h2>Check out some of my latest research</h2>
-          <div style="text-align:justify;" >
-            <p>I study the geology of rock deformation in faults and shear zones. My work focuses on the structural evolution of ancient continental-scale shear zones, fluid flow and stress transfer across rheological boundaries in the middle crust (Melosh et al., 2016; Melosh et al., in final prep.), coseismic deformation mechanisms (Melosh et al., 2014) and the influence of aseismic processes on earthquake rupture. <br/><br>I am also interested active margins using the earth surface as a strain marker to inform fault slip and fold growth processes (Melosh and Keller, 2013). I have experience working with structurally controlled magmatic systems in active transtensional (Busby et al., 2013) and transpressive settings. I complement this with industry experience in understanding the structural controls on fluid flow in active geothermal systems (e.g. Libbey et al., 2015). </p>
-
-          </div><!--/col-md-8-->
-       
-      </div><!--/.container-->
-<div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-
-</div>
-</div>
-</div>
-
-
-	 <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5 col-md-offset-1">
-          <h2 class="featurette-heading"><a name="EarthquakeGeology"> Seismic cycling in the brittle-plastic transition of a transform boundary</a><br><br><span class="text-muted"></span></h2>
-          <p class="lead"><i>Pofadder Shear Zone, Namibia and South Africa</i></p>
-             <p class="lead">Detailed field mapping reveals new insights into how mid-crustal faults operate.</p>
-
-        </div>
-        
-<div class="col-md-4">
-    <div  id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div  class="carousel-inner" role="listbox">
-    <div  class="item active">
-      <img class="research_pic" src="assets/img/portfolio/portfolio_02.png" alt="Chania">
-       <div class="container">
-            <div class="carousel-caption">
-              <h1></h1>
-              <p style="color:white;font-size:25px">Overprinting brittle and ductile fabrics</p>
-            </div>
-          </div>
-    </div>
-
-    <div class="item">
-      <img class="research_pic" src="assets/img/portfolio/portfolio_01.png" alt="Chania">
-          <div class="container">
-            <div class="carousel-caption">
-            
-              <p style="color:white;font-size:25px">Differential synkinematic exhumation</p>
-            </div>
-          </div>
-    </div>
-
-    <div class="item">
-      <img class="research_pic" src="assets/img/portfolio/portfolio_03.png" alt="Flower">
-        <div class="container">
-          <div class="carousel-caption">
-            <p style="color:white;font-size:25px">Active folding and strength fluctuations</p>
-          </div>
-        </div>
-    </div>
-
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-	</div>
-<!--           <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image"> -->
- </div>
-</div>
-
-
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-      
-        <div class="col-md-5 col-md-offset-1">
-            <img style="height:240px;margin-top:30px;" class="featurette-image img-responsive center-block" src="assets/img/portfolio/guatemala.png" alt="Generic placeholder image">
-        </div>
-        
-        <div class="col-md-5">
-        <h2 class="featurette-heading"><a name="Geothermal"> Structural controls on the Joaquina geothermal system, central Guatemala</a><span class="text-muted"></span></h2>
-          <br>
-          <p class="lead">Structural mapping and creation of three-dimensional fluid flow models.</p>
-        </div>
-        
-      </div>
-      
-
-  <hr class="featurette-divider">
-
-      <div class="row featurette">
-      
-      <div class="col-md-5 col-md-offset-1">
-        <h2 class="featurette-heading"><a name="Active Tectonics"> Active tectonics in the Santa Barbara Fold Belt</a><span class="text-muted"></span></h2>
-          <br>
-          <p class="lead">Geomorphology and cross-cutting relationships of active folds reveals relative timing of deformation.</p>
-        </div>  
-      
-        <div class="col-md-5">
-            <img style="height:240px;margin-top:30px;" class="featurette-image img-responsive center-block" src="assets/img/portfolio/sbfb.png" alt="Generic placeholder image">
-        </div>
-        
-      </div>
-      
-      
-      
-    
-    </div>
-      
-        
-       
-      </div>
-   
 
      
       <!-- /END THE FEATURETTES -->
