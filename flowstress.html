@@ -29,6 +29,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style>
+
     .clients img {
     max-width: 400px;
     max-height: 200px;
@@ -53,7 +54,7 @@
 </style>
   </head>
 
-  <audio controls autoplay loop>
+  <audio controls autoplay loop autostart="0">
   
   <source src="assets/ryanjam.mp3" type="audio/ogg">
   </audio>
@@ -62,19 +63,9 @@
   
  
   
-  
-  
-
-  <body>
-
-
-
+<body>
 <div class="container">
- 
-  <p style="font-size: 26px"><b>Flow Stress Calculator </b></p>
-  
-
-    
+ <p style="font-size: 26px"><b>Flow Stress Calculator </b></p>
     <form onsubmit="return false" oninput = "flowstress.value = Math.round(Math.exp((Math.log(grainsize.value) - Math.log(2451)) / -1.26) * 100) / 100;">
 
      Grain Size (in &mu;m): <input name="grainsize" id="grainsize" type="number">
