@@ -93,7 +93,8 @@
 <div id="footer"></div>
 
 <script>
-
+Q3D.Config.northArrow.visible = true;
+Q3D.Config.northArrow.color = 0x797979;
 if (typeof proj4 === "undefined") document.getElementById("lib_proj4js").style.display = "none";
 
 var app = Q3D.application,
@@ -111,7 +112,7 @@ app.addEventListener("sceneLoaded", function () {
 });
 
 // load the scene
-app.loadJSONFile("../assets/data/cow_mountain_eq2/scene.json", function () {
+app.loadJSONFile("./assets/data/cow_mountain_eq2/scene.json", function () {
   app.start();
 
   Q3D.gui.init();   // initialize dat-gui panel
