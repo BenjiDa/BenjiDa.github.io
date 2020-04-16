@@ -240,14 +240,15 @@ input {
 	text-align: right;
 }
 
-#header-content {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
 
 #h i {
 	font-size: 50px;
+}
+
+#h p {
+	position:relative;
+	bottom:0;
+	right:0;
 }
 
 
