@@ -1,0 +1,27 @@
+        <!-- Contact Section -->
+  <!--   <div class="container-fluid">
+            <div class="row no-gutter">
+                <img src="img/cr-view-bw2.jpg" class="img-responsive" alt="">
+            </div>
+    </div> -->
+
+    <section id="contact" class="contact-section container content-section text-center">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <h2>Contact</h2>
+                <!-- <p>...</p> -->
+                <p><a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.symbol }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        
+        
+    </section>
+

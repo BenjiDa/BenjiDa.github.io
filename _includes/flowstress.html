@@ -1,0 +1,173 @@
+
+
+<!-- <div class="audio-player">
+ <audio controls align="right">
+  <source src="assets/ryanjam.mp3" type="audio/ogg">
+  </audio>
+  <p style="font-size: 14px"><i>Soothing Ryan Libbey jams as you calculate flow stress (courtesy of PortPound Studios) </i></p>
+</div> -->
+<style>
+
+
+.tool-image {
+  width: 100%;
+  padding: 150px 0;
+  color: #fff;
+  margin: 50px auto;
+  background: linear-gradient(#000000 0%, #00000000 10%, #00000000 90%, #000000 100%), url(/img/ebsd.png) no-repeat center center scroll;
+  background-color: {{ site.color.primary-dark }};
+  background: 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.navbar-custom a {
+    color: white;
+}
+
+
+/** {
+  box-sizing: border-box;
+}*/
+
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 4px;
+  /*resize: vertical;*/
+  color: white;
+
+}
+
+/*#form {
+  color: white;
+}*/
+
+output {
+  font-size: 20px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 4px;
+  /*resize: vertical;*/
+  color: white;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+/*.container {
+  border-radius: 5px;
+  padding: 20px;
+}*/
+
+.col-25 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+
+<!-- <body> -->
+<div class="container content-section text-center" style="padding-bottom: 100px;">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3">
+                <h2>Flowstress Calculator</h2>
+
+            </div>
+        </div>          
+</div>
+
+<div class="container" style="width:450px;">
+  <div class="row">
+  <form name="fs-form" onsubmit="return false" oninput = "flowstress.value = Math.round(Math.exp((Math.log(grainsize.value) - Math.log(2451)) / -1.26) * 100) / 100;">
+      <div class="col-25">
+        <p><label for="fname">Grain size (in &mu;m): </label><p>
+      </div>
+      <div class="col-75">
+        <p><input type="number" id="grainsize" name="grainsize" placeholder="Numeric value..."><p>
+      </div>
+      </form>
+    </div>
+  
+
+  <div class="row">
+    <div class="col-25">
+      <p><label for="lname">Flow Stress (MPa):</label></p>
+    </div>
+    <div class="col-75">
+      <p><output form="fs-form" type="number" id="flowstress" name="flowstress" style="color:white;"></output></p>
+  </div>
+      
+  </div>
+    <div class="row">
+      <p>Flow stress calculated with the Stipp et al. (2003) paleopiezometer and the Holyoke et al. (2010) correction. </p>
+  </div>
+</div>
+
+
+
+
+ <!-- color:#6c757d; -->
+   <!-- <div class="flowstress-section"></div> -->
+
+   
+    <div class="tool-image"></div>
+
+
+
+  
+<script>
+  // const numInput = document.querySelector('input');
+  const output = document.querySelector('output');
+  output.value = "Flowstress...";
+
+</script>
+  
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.js"></script>
+    <script src="assets/js/jquery.hoverdir.js"></script>
+    <script src="assets/js/jquery.hoverex.min.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/custom.js"></script> -->
+
+
+<!--   </body>
+</html> -->

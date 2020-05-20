@@ -1,3 +1,7 @@
-*/.DS_Store
-*.DS_Store
-.DS_Store
+_site
+.sass-cache
+.jekyll-cache/
+.jekyll-metadata
+vendor
+geo_map
+.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/
