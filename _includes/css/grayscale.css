@@ -235,6 +235,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background: linear-gradient(#00000000 85%, #000000 100%), url(/img/intro-bg.jpg) no-repeat bottom center scroll;
+    clip: rect(0px,60px,200px,0px);
     background-color: {{ site.color.primary-dark }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
