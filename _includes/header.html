@@ -1,26 +1,69 @@
     <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
+    <header class="intro hero-section">
+        <div class="hero-background"></div>
+        <div class="hero-content">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <!-- <h1 class="brand-heading">{{ site.title }}</h1> -->
-                        <p class="intro-text">{{ site.description }}<br>
+                <div class="row align-items-center hero-row">
+                    <div class="col-md-6 hero-text">
+                        <div class="hero-intro">
+                            <h1 class="hero-title">Ben Melosh</h1>
+                            <h2 class="hero-subtitle">Research Geologist</h2>
+                            <p class="hero-description">
+                                Integrating field geology, geophysical observations, and numerical modeling to understand active faults, crustal deformation, geothermal systems, and earthquake mechanics.
+                            </p>
+                            <div class="hero-cta">
+                                <a href="#capabilities" class="btn btn-default page-scroll">Explore My Work</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 hero-image-container">
+                        <div class="hero-image-wrapper">
+                            <img src="/img/intro-bg.jpg"
+                                  alt="Research geology fieldwork visualization"
+                                 class="hero-image"
+                                 width="400"
+                                 height="254">
+                            <svg class="hero-overlay" viewBox="0 0 400 254" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Subtle fault traces and structural elements -->
+                                <defs>
+                                    <pattern id="stress-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                                        <circle cx="20" cy="20" r="2" fill="rgba(33, 154, 179, 0.3)" />
+                                    </pattern>
+                                </defs>
+                                <!-- Diagonal fault traces -->
+                                <line x1="50" y1="20" x2="350" y2="180" stroke="rgba(33, 154, 179, 0.4)" stroke-width="1.5" />
+                                <line x1="60" y1="10" x2="360" y2="170" stroke="rgba(33, 154, 179, 0.3)" stroke-width="1" />
+                                <line x1="40" y1="30" x2="340" y2="190" stroke="rgba(33, 154, 179, 0.2)" stroke-width="1" />
+                                <!-- Cross-cutting fault -->
+                                <line x1="150" y1="240" x2="280" y2="30" stroke="rgba(33, 154, 179, 0.35)" stroke-width="1.5" />
+                                <!-- Stress indicator arrows -->
+                                <g opacity="0.25">
+                                    <path d="M 100 120 L 90 115 L 95 120 L 90 125 Z" fill="rgba(255, 107, 107, 0.6)" />
+                                    <path d="M 300 150 L 310 155 L 305 150 L 310 145 Z" fill="rgba(255, 107, 107, 0.6)" />
+                                </g>
+                                <!-- Subtle topographic contour -->
+                                <path d="M 10 180 Q 50 175 100 180 T 250 185 T 400 182"
+                                      stroke="rgba(100, 161, 157, 0.25)"
+                                      stroke-width="1.5"
+                                      fill="none" />
+                                <path d="M 15 200 Q 55 195 105 200 T 255 205 T 400 202"
+                                      stroke="rgba(100, 161, 157, 0.2)"
+                                      stroke-width="1"
+                                      fill="none" />
+                                <!-- Corner accent -->
+                                <circle cx="30" cy="25" r="4" fill="none" stroke="rgba(33, 154, 179, 0.3)" stroke-width="1.5" />
+                                <circle cx="370" cy="230" r="4" fill="none" stroke="rgba(33, 154, 179, 0.3)" stroke-width="1.5" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="container">
-                <div class="row align-items-end" >
-                    <div class="col-md-8 col-md-offset-2" >
-                        <a href="#portfolio" class="btn btn-circle page-scroll">
+                <div class="row hero-scroll-prompt">
+                    <div class="col-md-12">
+                        <a href="#capabilities" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </header>
